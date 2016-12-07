@@ -1,21 +1,37 @@
 .App {
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
   text-align: center;
+  width: 70vw;
+  background-color: pink;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  height: 20vh;
 }
 
 .App-header {
+  flex: 1 100%;
   background-color: #222;
-  height: 150px;
   padding: 20px;
   color: white;
 }
 
-.App-intro {
-  font-size: large;
+.Movie {
+  flex: 1 100%;
+  background: SkyBlue;
+}
+
+.Meal {
+  flex: 1 auto;
+  background: LightGreen;
+}
+
+.Clothing {
+  flex: 1 auto;
+  background: Tomato;
 }
 
 @keyframes App-logo-spin {
