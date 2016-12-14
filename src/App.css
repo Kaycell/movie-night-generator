@@ -1,10 +1,34 @@
+.container {
+  width: 210px;
+  height: 140px;
+  position: relative;
+  perspective: 1000px;
+}
+
+.slot {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+
+.panel {
+  margin: 0;
+  display: block;
+  position: absolute;
+  width: 170px;
+  height: 210px;
+  left: 10px;
+  top: 10px;
+  border: 2px solid black;
+}
+
 .App {
   margin: auto;
   display: flex;
   flex-flow: row wrap;
   text-align: center;
   width: 70vw;
-  background-color: pink;
 }
 
 .App-logo {
@@ -24,14 +48,35 @@
   background: SkyBlue;
 }
 
+.MoviePoster {
+  flex: 1 100%;
+  max-width: 140px;
+  max-height: 209px;
+  background: SkyBlue;
+}
+
 .Meal {
   flex: 1 auto;
   background: LightGreen;
 }
 
+.MealPhoto {
+  flex: 1 100%;
+  max-width: 140px;
+  max-height: 209px;
+  background: SkyBlue;
+}
+
 .Clothing {
   flex: 1 auto;
   background: Tomato;
+}
+
+.ClothingPhoto {
+  flex: 1 100%;
+  max-width: 140px;
+  max-height: 209px;
+  background: SkyBlue;
 }
 
 @keyframes App-logo-spin {
